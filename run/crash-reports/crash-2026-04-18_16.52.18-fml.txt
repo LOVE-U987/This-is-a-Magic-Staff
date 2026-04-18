@@ -1,0 +1,113 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 2026-04-18 16:52:18
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Mod loading issue --
+Details:
+	Mod file: <No mod information provided>
+	Failure message: File C:\Users\97128\Documents\GitHub\This-is-a-Magic-Staff\build\classes\java\main contains mod entrypoint class com.legendarymage.legendarymagemod.LegendaryMage for mod with id legendarymage, which does not exist or is not in the same file.
+		Did you forget to update the mod id in the entrypoint?
+	Mod version: <No mod information provided>
+	Mod issues URL: <No issues URL found>
+	Exception message: <No associated exception found>
+
+-- Mod loading issue --
+Details:
+	Mod file: <No mod information provided>
+	Failure message: File C:\Users\97128\Documents\GitHub\This-is-a-Magic-Staff\build\classes\java\main contains mod entrypoint class com.legendarymage.legendarymagemod.LegendaryMageClient for mod with id legendarymage, which does not exist or is not in the same file.
+		Did you forget to update the mod id in the entrypoint?
+	Mod version: <No mod information provided>
+	Mod issues URL: <No issues URL found>
+	Exception message: <No associated exception found>
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.9, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 169023160 bytes (161 MiB) / 570425344 bytes (544 MiB) up to 6299844608 bytes (6008 MiB)
+	CPUs: 18
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) Ultra 5 125H
+	Identifier: Intel64 Family 6 Model 170 Stepping 4
+	Microarchitecture: unknown
+	Frequency (GHz): 3.00
+	Number of physical packages: 1
+	Number of physical CPUs: 14
+	Number of logical CPUs: 18
+	Graphics card #0 name: NVIDIA GeForce RTX 4060 Laptop GPU
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 8188.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.9186
+	Graphics card #1 name: Intel(R) Arc(TM) Graphics
+	Graphics card #1 vendor: Intel Corporation
+	Graphics card #1 VRAM (MiB): 2048.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.101.6078
+	Memory slot #0 capacity (MiB): 3072.00
+	Memory slot #0 clockSpeed (GHz): 8.53
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 3072.00
+	Memory slot #1 clockSpeed (GHz): 8.53
+	Memory slot #1 type: Unknown
+	Memory slot #2 capacity (MiB): 3072.00
+	Memory slot #2 clockSpeed (GHz): 8.53
+	Memory slot #2 type: Unknown
+	Memory slot #3 capacity (MiB): 3072.00
+	Memory slot #3 clockSpeed (GHz): 8.53
+	Memory slot #3 type: Unknown
+	Memory slot #4 capacity (MiB): 3072.00
+	Memory slot #4 clockSpeed (GHz): 8.53
+	Memory slot #4 type: Unknown
+	Memory slot #5 capacity (MiB): 3072.00
+	Memory slot #5 clockSpeed (GHz): 8.53
+	Memory slot #5 type: Unknown
+	Memory slot #6 capacity (MiB): 3072.00
+	Memory slot #6 clockSpeed (GHz): 8.53
+	Memory slot #6 type: Unknown
+	Memory slot #7 capacity (MiB): 3072.00
+	Memory slot #7 clockSpeed (GHz): 8.53
+	Memory slot #7 type: Unknown
+	Virtual memory max (MiB): 51677.37
+	Virtual memory used (MiB): 25995.68
+	Swap memory total (MiB): 27648.00
+	Swap memory used (MiB): 1037.50
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 57165.00, total: 307200.00
+	Space in storage for workdir (MiB): available: 57165.00, total: 307200.00
+	JVM Flags: 0 total; 
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		curios-neoforge-9.5.1+1.21.1.jar                  |Curios API                    |curios                        |9.5.1+1.21.1        |Manifest: NOSIGNATURE
+		geckolib-neoforge-1.21.1-4.8.3.jar                |GeckoLib 4                    |geckolib                      |4.8.3               |Manifest: NOSIGNATURE
+		irons_spellbooks-1.21.1-3.15.0.jar                |Iron's Spells 'n Spellbooks   |irons_spellbooks              |1.21.1-3.15.0       |Manifest: NOSIGNATURE
+		neoforge-21.1.219.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.219.jar                             |NeoForge                      |neoforge                      |21.1.219            |Manifest: NOSIGNATURE
+		player-animation-lib-forge-2.0.4+1.21.1.jar       |Player Animator               |playeranimator                |2.0.4+1.21.1        |Manifest: NOSIGNATURE
+		main                                              |This-is-a-Magic-Staff         |this_is_a_magic_staff         |1.0.0               |Manifest: NOSIGNATURE
