@@ -26,7 +26,7 @@ renderDistance:12
 simulationDistance:12
 screenEffectScale:1.0
 soundDevice:""
-autoJump:false
+autoJump:true
 operatorItemsTab:false
 autoSuggestions:true
 chatColors:true
@@ -40,7 +40,7 @@ directionalAudio:false
 touchscreen:false
 bobView:true
 toggleCrouch:false
-toggleSprint:false
+toggleSprint:true
 darkMojangStudiosBackground:false
 hideLightningFlashes:false
 hideSplashTexts:false
