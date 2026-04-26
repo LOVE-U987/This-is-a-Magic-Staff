@@ -24,7 +24,7 @@ license="MIT License"
 modId="this_is_a_magic_staff" #mandatory
 
 # The version number of the mod
-version="1.0.0" #mandatory
+version="1.0.2" #mandatory
 
 # A display name for the mod
 displayName="This is a Magic Staff!" #mandatory

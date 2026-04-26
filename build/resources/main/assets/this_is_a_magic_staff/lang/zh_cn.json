@@ -1,18 +1,8 @@
 {
-  "itemGroup.this_is_a_magic_staff": "这是一根魔法杖！",
-
   "key.this_is_a_magic_staff.transform_item": "转换手持物品",
-  "key.categories.this_is_a_magic_staff": "这是一根魔法杖！",
+  "key.categories.this_is_a_magic_staff": "万法皆杖！",
 
   "message.this_is_a_magic_staff.no_item_in_hand": "§c你必须在主手持有一个物品！",
   "message.this_is_a_magic_staff.item_transformed_to_casting": "§a物品已转换为施法工具！右键施放法术。",
-  "message.this_is_a_magic_staff.item_restored_to_normal": "§a物品已恢复为普通武器。",
-
-  "this_is_a_magic_staff.configuration.title": "这是一根魔法杖！配置",
-  "this_is_a_magic_staff.configuration.section.this_is_a_magic_staff.common.toml": "这是一根魔法杖！配置",
-  "this_is_a_magic_staff.configuration.section.this_is_a_magic_staff.common.toml.title": "这是一根魔法杖！配置",
-  "this_is_a_magic_staff.configuration.items": "物品列表",
-  "this_is_a_magic_staff.configuration.logDirtBlock": "记录泥土方块",
-  "this_is_a_magic_staff.configuration.magicNumberIntroduction": "魔法数字文本",
-  "this_is_a_magic_staff.configuration.magicNumber": "魔法数字"
+  "message.this_is_a_magic_staff.item_restored_to_normal": "§a物品已恢复为普通武器。"
 }
