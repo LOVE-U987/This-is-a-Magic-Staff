@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 40.0,
+  "ingredient": {
+    "item": "irons_spellbooks:raw_mithril"
+  },
+  "result": { "item": "irons_spellbooks:mithril_scrap"
+  }
+}

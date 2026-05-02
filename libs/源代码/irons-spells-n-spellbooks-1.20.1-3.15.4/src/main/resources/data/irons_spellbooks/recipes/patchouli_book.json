@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "patchouli"
+    }
+  ],
+  
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "irons_spellbooks:arcane_essence"
+    }
+  ],
+  "result": { "item": "patchouli:guide_book",
+    "components": {
+      "patchouli:book": "irons_spellbooks:iss_guide_book"
+    },
+    "count": 1
+  }
+}

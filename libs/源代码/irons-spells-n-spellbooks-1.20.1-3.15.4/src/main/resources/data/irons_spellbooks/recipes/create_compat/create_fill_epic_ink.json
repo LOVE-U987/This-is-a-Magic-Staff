@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:filling",
+  "ingredients": [
+    {"item":"minecraft:glass_bottle"},
+    {
+      "fluid": "irons_spellbooks:epic_ink",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "item": "irons_spellbooks:epic_ink"
+    }
+  ]
+}

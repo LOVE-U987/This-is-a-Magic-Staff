@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "FRF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "tag": "forge:bookshelves"
+    },
+    "R": {
+      "item": "irons_spellbooks:arcane_essence"
+    }
+  },
+  "result": { "item": "irons_spellbooks:wisewood_bookshelf",
+    "count": 8
+  }
+}
