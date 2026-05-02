@@ -1,0 +1,20 @@
+{
+  "itemGroup.this_is_a_magic_staff": "This is a Magic Staff! Tab",
+  "block.this_is_a_magic_staff.example_block": "Example Block",
+  "item.this_is_a_magic_staff.example_item": "Example Item",
+
+  "key.this_is_a_magic_staff.transform_item": "Transform Held Item",
+  "key.categories.this_is_a_magic_staff": "This is a Magic Staff!",
+
+  "message.this_is_a_magic_staff.no_item_in_hand": "§cYou must hold an item in your main hand!",
+  "message.this_is_a_magic_staff.item_transformed_to_casting": "§aItem transformed into a casting implement! Right-click to cast spells.",
+  "message.this_is_a_magic_staff.item_restored_to_normal": "§aItem restored to normal weapon.",
+
+  "this_is_a_magic_staff.configuration.title": "This is a Magic Staff! Configs",
+  "this_is_a_magic_staff.configuration.section.this_is_a_magic_staff.common.toml": "This is a Magic Staff! Configs",
+  "this_is_a_magic_staff.configuration.section.this_is_a_magic_staff.common.toml.title": "This is a Magic Staff! Configs",
+  "this_is_a_magic_staff.configuration.items": "Item List",
+  "this_is_a_magic_staff.configuration.logDirtBlock": "Log Dirt Block",
+  "this_is_a_magic_staff.configuration.magicNumberIntroduction": "Magic Number Text",
+  "this_is_a_magic_staff.configuration.magicNumber": "Magic Number"
+}

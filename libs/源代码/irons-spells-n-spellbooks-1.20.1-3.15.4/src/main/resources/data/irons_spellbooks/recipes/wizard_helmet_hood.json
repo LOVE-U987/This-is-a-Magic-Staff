@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "C C"
+  ],
+  "key": {
+    "C": {
+      "item": "irons_spellbooks:magic_cloth"
+    }
+  },
+  "result": { "item": "irons_spellbooks:wizard_helmet",
+    "count": 1
+  }
+}

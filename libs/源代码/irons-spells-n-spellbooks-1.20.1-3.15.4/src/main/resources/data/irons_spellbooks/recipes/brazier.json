@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IFI",
+    " I "
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:campfire"
+    },
+    "I": {
+      "tag": "forge:nuggets/iron"
+    }
+  },
+  "result": { "item": "irons_spellbooks:brazier",
+    "count": 1
+  }
+}

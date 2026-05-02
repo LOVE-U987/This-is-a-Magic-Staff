@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "tag": "forge:ingots/netherite"
+  },
+  "base": {
+    "tag": "irons_spellbooks:wizard_base_boots"
+  },
+  "result": {
+    "count": 1,
+    "item": "irons_spellbooks:netherite_mage_boots"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

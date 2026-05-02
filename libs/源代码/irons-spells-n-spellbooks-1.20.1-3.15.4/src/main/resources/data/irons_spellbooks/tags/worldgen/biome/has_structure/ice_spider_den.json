@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:is_snowy"
+  ],
+  "remove": [
+    "#forge:is_mountain",
+    "#forge:is_ocean"
+  ]
+}
