@@ -33,6 +33,16 @@ public class Config {
             .comment("When enabled, items transformed by this mod can be upgraded using Iron's Spellbooks upgrade orbs.")
             .define("enableUpgradeCompat", true);
 
+    public static final ModConfigSpec.BooleanValue ENABLE_SPELL_EXTRACTION = BUILDER
+            .comment("Enable spell extraction feature.")
+            .comment("When enabled, players can extract spells from spellbooks and weapons to create scrolls.")
+            .define("enableSpellExtraction", true);
+
+    public static final ModConfigSpec.IntValue SPELL_EXTRACTION_COST = BUILDER
+            .comment("Experience level cost for extracting a spell.")
+            .comment("The player must have at least this many experience levels to extract a spell.")
+            .defineInRange("spellExtractionCost", 5, 1, 100);
+
     public static final ModConfigSpec SPEC = BUILDER.build();
 
     private static boolean validateItemName(final Object obj) {

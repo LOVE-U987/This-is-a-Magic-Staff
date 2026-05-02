@@ -1,5 +1,5 @@
 #Whether to log the dirt block on common setup
-logDirtBlock = true
+logDirtBlock = false
 #A magic number
 # Default: 42
 # Range: > 0
@@ -8,3 +8,14 @@ magicNumber = 42
 magicNumberIntroduction = "The magic number is... "
 #A list of items to log on common setup.
 items = ["minecraft:iron_ingot"]
+#Enable upgrade orb compatibility for transformed items.
+#When enabled, items transformed by this mod can be upgraded using Iron's Spellbooks upgrade orbs.
+enableUpgradeCompat = true
+#Enable experience cost for inscription table spell extraction.
+#When enabled, extracting spells from the inscription table costs experience levels.
+inscriptionTableCost = true
+#Experience level cost for extracting a spell from the inscription table.
+#The player must have at least this many experience levels to extract a spell.
+# Default: 5
+# Range: 1 ~ 100
+inscriptionTableCostAmount = 5

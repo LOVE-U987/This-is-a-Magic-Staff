@@ -18,4 +18,4 @@ enableSpellExtraction = true
 #The player must have at least this many experience levels to extract a spell.
 # Default: 5
 # Range: 1 ~ 100
-spellExtractionCost = 5
+spellExtractionCost = 1

@@ -34,7 +34,6 @@ public class ModConfigScreen extends Screen {
     private static final int PADDING = 24;
     private static final int ROW_HEIGHT = 32;
     private static final int BUTTON_WIDTH = 120;
-    private static final int LABEL_WIDTH = 200;
 
     // 动画相关 - 打开动画
     private float openAnimationProgress = 0.0f;
@@ -43,11 +42,10 @@ public class ModConfigScreen extends Screen {
     private int entryIndex = 0;
 
     // 动画相关 - 悬停效果
-    private int hoveredEntryIndex = -1;
     private float[] hoverProgress;
 
     // 动画相关 - 背景粒子
-    private List<Particle> particles = new ArrayList<>();
+    private final List<Particle> particles = new ArrayList<>();
     private long lastParticleSpawn = 0;
 
     // 动画类型枚举
@@ -67,7 +65,6 @@ public class ModConfigScreen extends Screen {
     private int scrollOffset = 0;
     private int totalContentHeight = 0;
     private boolean isScrolling = false;
-    private float scrollVelocity = 0;
 
     // 面板尺寸
     private int panelTop;
@@ -158,6 +155,25 @@ public class ModConfigScreen extends Screen {
             "this_is_a_magic_staff.config.upgrade_compat.tooltip",
             Config.ENABLE_UPGRADE_COMPAT.get(),
             value -> Config.ENABLE_UPGRADE_COMPAT.set(value)
+        );
+
+        // 添加配置项：法术提取功能
+        currentY = addBooleanConfigRow(
+            currentY,
+            "this_is_a_magic_staff.config.spell_extraction",
+            "this_is_a_magic_staff.config.spell_extraction.tooltip",
+            Config.ENABLE_SPELL_EXTRACTION.get(),
+            value -> Config.ENABLE_SPELL_EXTRACTION.set(value)
+        );
+
+        // 添加配置项：法术提取经验消耗
+        currentY = addIntConfigRow(
+            currentY,
+            "this_is_a_magic_staff.config.extraction_cost",
+            "this_is_a_magic_staff.config.extraction_cost.tooltip",
+            Config.SPELL_EXTRACTION_COST.get(),
+            1, 100,
+            value -> Config.SPELL_EXTRACTION_COST.set(value)
         );
 
         this.totalContentHeight = currentY - (panelTop + 55);
@@ -265,7 +281,6 @@ public class ModConfigScreen extends Screen {
         // 应用打开动画
         int animPanelTop = panelTop + (int) ((1.0f - openAnimationProgress) * 40);
         int animAlpha = (int) (openAnimationProgress * 255);
-        float animScale = 0.9f + (openAnimationProgress * 0.1f);
 
         // 1. 渲染纯色背景（禁用模糊）
         guiGraphics.fill(0, 0, this.width, this.height, 0xFF1A1A2E);
@@ -277,7 +292,7 @@ public class ModConfigScreen extends Screen {
         renderBackgroundDecoration(guiGraphics, animAlpha);
 
         // 4. 渲染面板背景（带动画）
-        renderPanelBackground(guiGraphics, animPanelTop, animAlpha, animScale);
+        renderPanelBackground(guiGraphics, animPanelTop, animAlpha);
 
         // 5. 渲染标题（带动画和发光效果）
         renderTitle(guiGraphics, animAlpha);
@@ -419,7 +434,7 @@ public class ModConfigScreen extends Screen {
     /**
      * 渲染面板背景
      */
-    private void renderPanelBackground(GuiGraphics guiGraphics, int top, int alpha, float scale) {
+    private void renderPanelBackground(GuiGraphics guiGraphics, int top, int alpha) {
         int bgAlpha = Math.min(alpha, 240);
         int bgColor = (bgAlpha << 24) | 0x16213E;
         int borderColor = (Math.min(alpha, 200) << 24) | 0x4A90E2;
@@ -462,9 +477,6 @@ public class ModConfigScreen extends Screen {
             // 根据动画类型计算偏移
             int animOffsetX = 0;
             int animOffsetY = 0;
-            float animScale = 1.0f;
-            float animRotation = 0.0f;
-
             EntryAnimationType animType = entryAnimationTypes[widget.index % entryAnimationTypes.length];
 
             switch (animType) {
@@ -478,8 +490,6 @@ public class ModConfigScreen extends Screen {
                     animOffsetY = (int) ((1.0f - entryProgress) * 40);
                     break;
                 case SCALE_UP:
-                    animScale = 0.7f + (entryProgress * 0.3f);
-                    break;
                 case FADE_IN:
                     // 只有透明度变化，无位移
                     break;
@@ -487,7 +497,6 @@ public class ModConfigScreen extends Screen {
                     animOffsetY = (int) ((1.0f - easeOutBounce(entryProgress)) * -30);
                     break;
                 case FLIP:
-                    animScale = (float) Math.cos((1.0f - entryProgress) * Math.PI / 2);
                     break;
             }
 
@@ -583,8 +592,6 @@ public class ModConfigScreen extends Screen {
 
             currentY += ROW_HEIGHT;
         }
-
-        hoveredEntryIndex = newHoveredIndex;
     }
 
     /**

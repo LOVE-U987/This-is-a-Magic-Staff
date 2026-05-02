@@ -243,5 +243,29 @@
     },
     "done": true
   },
+  "irons_spellbooks:irons_spellbooks/spell_book_blood": {
+    "criteria": {
+      "requirement": "2026-05-02 18:25:39 +0800"
+    },
+    "done": true
+  },
+  "irons_spellbooks:irons_spellbooks/spell_book_evoker": {
+    "criteria": {
+      "requirement": "2026-05-02 18:26:13 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-05-02 18:46:10 +0800"
+    },
+    "done": true
+  },
+  "irons_spellbooks:irons_spellbooks/spell_book_dead_king": {
+    "criteria": {
+      "requirement": "2026-05-02 18:46:32 +0800"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

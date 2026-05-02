@@ -1,10 +1,15 @@
 {
   "key.this_is_a_magic_staff.transform_item": "Transform Held Item",
+  "key.this_is_a_magic_staff.extract_spell": "Extract Spell",
   "key.categories.this_is_a_magic_staff": "This is a Magic Staff!",
 
   "message.this_is_a_magic_staff.no_item_in_hand": "§cYou must hold an item in your main hand!",
   "message.this_is_a_magic_staff.item_transformed_to_casting": "§aItem transformed into a casting implement! Right-click to cast spells.",
   "message.this_is_a_magic_staff.item_restored_to_normal": "§aItem restored to normal weapon.",
+  "message.this_is_a_magic_staff.no_spells": "§cThis item has no spells to extract!",
+  "message.this_is_a_magic_staff.insufficient_xp": "§cYou need at least %s experience levels to extract a spell!",
+  "message.this_is_a_magic_staff.spell_extracted": "§aSuccessfully extracted %s! Consumed %s levels.",
+  "message.this_is_a_magic_staff.extraction_disabled": "§cSpell extraction is disabled!",
 
   "this_is_a_magic_staff.config.title": "This is a Magic Staff! - Configuration",
   "this_is_a_magic_staff.config.debug_mode": "Debug Mode",
@@ -15,6 +20,10 @@
   "this_is_a_magic_staff.config.items.tooltip": "Comma-separated list of item identifiers",
   "this_is_a_magic_staff.config.upgrade_compat": "Upgrade Orb Compatibility",
   "this_is_a_magic_staff.config.upgrade_compat.tooltip": "Allow transformed items to be upgraded using Iron's Spellbooks upgrade orbs",
+  "this_is_a_magic_staff.config.spell_extraction": "Spell Extraction",
+  "this_is_a_magic_staff.config.spell_extraction.tooltip": "Allow extracting spells from spellbooks and weapons to create scrolls",
+  "this_is_a_magic_staff.config.extraction_cost": "Extraction Cost",
+  "this_is_a_magic_staff.config.extraction_cost.tooltip": "Experience levels required to extract a spell (1-100)",
   "this_is_a_magic_staff.config.value.on": "ON",
   "this_is_a_magic_staff.config.value.off": "OFF"
 }

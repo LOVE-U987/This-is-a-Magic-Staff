@@ -11,11 +11,3 @@ items = ["minecraft:iron_ingot"]
 #Enable upgrade orb compatibility for transformed items.
 #When enabled, items transformed by this mod can be upgraded using Iron's Spellbooks upgrade orbs.
 enableUpgradeCompat = true
-#Enable spell extraction feature.
-#When enabled, players can extract spells from spellbooks and weapons to create scrolls.
-enableSpellExtraction = true
-#Experience level cost for extracting a spell.
-#The player must have at least this many experience levels to extract a spell.
-# Default: 5
-# Range: 1 ~ 100
-spellExtractionCost = 5

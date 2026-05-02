@@ -25,5 +25,12 @@ public class NetworkHandler {
                 ItemTransformPacket.STREAM_CODEC,
                 ItemTransformPacket::handle
         );
+
+        // 注册法术提取数据包
+        registrar.playToServer(
+                SpellExtractPacket.TYPE,
+                SpellExtractPacket.STREAM_CODEC,
+                SpellExtractPacket::handle
+        );
     }
 }

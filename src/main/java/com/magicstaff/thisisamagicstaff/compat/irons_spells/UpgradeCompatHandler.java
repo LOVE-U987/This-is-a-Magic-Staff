@@ -41,7 +41,7 @@ public class UpgradeCompatHandler {
             field.setAccessible(true);
             upgradeWhitelistItems = (Set<Item>) field.get(null);
             return upgradeWhitelistItems;
-        } catch (Exception e) {
+        } catch (NoSuchFieldException | IllegalAccessException e) {
             ThisIsAMagicStaff.LOGGER.error("无法通过反射获取铁魔法的升级白名单: {}", e.getMessage());
             reflectionFailed = true;
             return null;

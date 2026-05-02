@@ -1,10 +1,15 @@
 {
   "key.this_is_a_magic_staff.transform_item": "转换手持物品",
+  "key.this_is_a_magic_staff.extract_spell": "提取法术",
   "key.categories.this_is_a_magic_staff": "这是一根魔法杖！",
 
   "message.this_is_a_magic_staff.no_item_in_hand": "§c你必须在主手持有一个物品！",
   "message.this_is_a_magic_staff.item_transformed_to_casting": "§a物品已转换为施法工具！右键施放法术。",
   "message.this_is_a_magic_staff.item_restored_to_normal": "§a物品已恢复为普通武器。",
+  "message.this_is_a_magic_staff.no_spells": "§c此物品没有可提取的法术！",
+  "message.this_is_a_magic_staff.insufficient_xp": "§c你需要至少 %s 级经验才能提取法术！",
+  "message.this_is_a_magic_staff.spell_extracted": "§a成功提取 %s！消耗了 %s 级经验。",
+  "message.this_is_a_magic_staff.extraction_disabled": "§c法术提取功能已禁用！",
 
   "this_is_a_magic_staff.config.title": "这是一根魔法杖！ - 配置",
   "this_is_a_magic_staff.config.debug_mode": "调试模式",
@@ -15,6 +20,10 @@
   "this_is_a_magic_staff.config.items.tooltip": "逗号分隔的物品标识符列表",
   "this_is_a_magic_staff.config.upgrade_compat": "升级法球兼容性",
   "this_is_a_magic_staff.config.upgrade_compat.tooltip": "允许转换后的物品使用铁魔法的升级法球进行升级",
+  "this_is_a_magic_staff.config.spell_extraction": "法术提取",
+  "this_is_a_magic_staff.config.spell_extraction.tooltip": "允许从法术书和武器中提取法术以创建卷轴",
+  "this_is_a_magic_staff.config.extraction_cost": "提取消耗",
+  "this_is_a_magic_staff.config.extraction_cost.tooltip": "提取法术所需的经验等级（1-100）",
   "this_is_a_magic_staff.config.value.on": "开启",
   "this_is_a_magic_staff.config.value.off": "关闭"
 }
