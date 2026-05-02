@@ -1,8 +1,20 @@
 {
   "key.this_is_a_magic_staff.transform_item": "转换手持物品",
-  "key.categories.this_is_a_magic_staff": "万法皆杖！",
+  "key.categories.this_is_a_magic_staff": "这是一根魔法杖！",
 
   "message.this_is_a_magic_staff.no_item_in_hand": "§c你必须在主手持有一个物品！",
   "message.this_is_a_magic_staff.item_transformed_to_casting": "§a物品已转换为施法工具！右键施放法术。",
-  "message.this_is_a_magic_staff.item_restored_to_normal": "§a物品已恢复为普通武器。"
+  "message.this_is_a_magic_staff.item_restored_to_normal": "§a物品已恢复为普通武器。",
+
+  "this_is_a_magic_staff.config.title": "这是一根魔法杖！ - 配置",
+  "this_is_a_magic_staff.config.debug_mode": "调试模式",
+  "this_is_a_magic_staff.config.debug_mode.tooltip": "启用调试日志以进行故障排除",
+  "this_is_a_magic_staff.config.magic_number": "魔法数字",
+  "this_is_a_magic_staff.config.magic_number.tooltip": "可配置的魔法数字值（0-100）",
+  "this_is_a_magic_staff.config.items": "物品列表",
+  "this_is_a_magic_staff.config.items.tooltip": "逗号分隔的物品标识符列表",
+  "this_is_a_magic_staff.config.upgrade_compat": "升级法球兼容性",
+  "this_is_a_magic_staff.config.upgrade_compat.tooltip": "允许转换后的物品使用铁魔法的升级法球进行升级",
+  "this_is_a_magic_staff.config.value.on": "开启",
+  "this_is_a_magic_staff.config.value.off": "关闭"
 }

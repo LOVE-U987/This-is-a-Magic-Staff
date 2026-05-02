@@ -1,5 +1,6 @@
 package com.magicstaff.thisisamagicstaff;
 
+import com.magicstaff.thisisamagicstaff.client.config.ModConfigScreen;
 import com.magicstaff.thisisamagicstaff.network.NetworkHandler;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -7,6 +8,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
@@ -43,6 +45,9 @@ public class ThisIsAMagicStaff {
 
         // 注册配置文件
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        // 注册配置界面
+        modContainer.registerExtensionPoint(IConfigScreenFactory.class, (client, parent) -> new ModConfigScreen(parent));
     }
 
     /**

@@ -4,5 +4,17 @@
 
   "message.this_is_a_magic_staff.no_item_in_hand": "§cYou must hold an item in your main hand!",
   "message.this_is_a_magic_staff.item_transformed_to_casting": "§aItem transformed into a casting implement! Right-click to cast spells.",
-  "message.this_is_a_magic_staff.item_restored_to_normal": "§aItem restored to normal weapon."
+  "message.this_is_a_magic_staff.item_restored_to_normal": "§aItem restored to normal weapon.",
+
+  "this_is_a_magic_staff.config.title": "This is a Magic Staff! - Configuration",
+  "this_is_a_magic_staff.config.debug_mode": "Debug Mode",
+  "this_is_a_magic_staff.config.debug_mode.tooltip": "Enable debug logging for troubleshooting",
+  "this_is_a_magic_staff.config.magic_number": "Magic Number",
+  "this_is_a_magic_staff.config.magic_number.tooltip": "A configurable magic number value (0-100)",
+  "this_is_a_magic_staff.config.items": "Item List",
+  "this_is_a_magic_staff.config.items.tooltip": "Comma-separated list of item identifiers",
+  "this_is_a_magic_staff.config.upgrade_compat": "Upgrade Orb Compatibility",
+  "this_is_a_magic_staff.config.upgrade_compat.tooltip": "Allow transformed items to be upgraded using Iron's Spellbooks upgrade orbs",
+  "this_is_a_magic_staff.config.value.on": "ON",
+  "this_is_a_magic_staff.config.value.off": "OFF"
 }
